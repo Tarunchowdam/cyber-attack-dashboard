@@ -67,15 +67,10 @@ npm run dev
 
 ---
 
-## 📌 Note
-
-This dashboard uses a **local CSV file** to display real attack analytics and simulate authentication without external databases.
-
----
-
 ### 👨‍💻 Author
 
 **Chowdam Tarun Kumar**
+
 
 
 
