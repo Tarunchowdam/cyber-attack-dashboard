@@ -26,7 +26,7 @@ export default function MapView() {
     return t;
   }
   const totalAttacks = data.length;
-  const detectedThreats = data.filter((e) => e.confidence >= 75).length;
+  const detectedThreats = data.filter((e) => e.confidencesc >= 75).length;
   const countriesAffected = Object.keys(grouped).length;
 
   // normalized grouping

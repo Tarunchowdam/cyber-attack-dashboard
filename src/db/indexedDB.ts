@@ -31,7 +31,7 @@ export async function insertDefaultUser() {
     createdAt: new Date().toISOString()
   });
 
-  return tx.complete;
+  return tx.oncomplete;
 }
 
 export async function validateUser(email: string, password: string): Promise<boolean> {
@@ -59,5 +59,5 @@ export async function addUser(email: string, password: string, role = "user") {
     role,
     createdAt: new Date().toISOString()
   });
-  return tx.complete;
+  return tx.oncomplete;
 }
