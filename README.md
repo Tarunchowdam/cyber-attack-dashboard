@@ -8,7 +8,7 @@ A modern cyber security analytics dashboard built using **React 19**, **TypeScri
 ## 🚀 Features
 
 - **Login / Logout Authentication**
-  - Session state stored using `localStorage` (acts as local DB simulation)
+  - Session state stored using `localStorage` (acts as local DB simulation)   
 - **Sidebar Navigation**
   - 2 main pages: **Threat Map** and **Attack Events**
 - **Threat Map Page**
@@ -70,6 +70,7 @@ npm run dev
 ### 👨‍💻 Author
 
 **Chowdam Tarun Kumar**
+
 
 
 
