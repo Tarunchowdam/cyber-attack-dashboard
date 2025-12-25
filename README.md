@@ -48,16 +48,16 @@ Here’s a screenshot of the **Cyber Attack Dashboard** in action:
 ![Cyber Attack Dashboard Threat Map](screenshots/Mapview.png)
 
 ![Cyber Attack Dashboard Attack Events Table](screenshots/tableview.png)
+
 ---
 
 ## 🛠️ Installation & Run
 
-```bash
+``bash
 cd cyber-attack-dashboard
 npm install
-npm run dev ```
+npm run dev
 
----
 
 ## 🎯 Tech Stack
 
@@ -82,6 +82,7 @@ npm run dev ```
 ### 👨‍💻 Author
 
 **Chowdam Tarun Kumar**
+
 
 
 
