@@ -66,7 +66,7 @@ export default function MapView() {
           </div>
         </div>
 
-        <div style={{ height: 420 }}>
+        <div style={{ width: "100%",height: 620 }}>
           <ComposableMap style={{ width: "100%", height: 620 }}>
             <Geographies geography="https://cdn.jsdelivr.net/npm/world-atlas@2/countries-110m.json">
               {({ geographies }) =>
