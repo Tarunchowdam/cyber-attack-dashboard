@@ -8,7 +8,7 @@ A modern cyber security analytics dashboard built using **React 19**, **TypeScri
 ## 🚀 Features
 
 - **Login / Logout Authentication**
-  - Session state stored using `localStorage` (acts as local DB simulation)
+  - Session state stored using `localStorage` (acts as local DB simulation)   
 - **Sidebar Navigation**
   - 2 main pages: **Threat Map** and **Attack Events**
 - **Threat Map Page**
@@ -35,7 +35,15 @@ A modern cyber security analytics dashboard built using **React 19**, **TypeScri
   - Clean merged codebase with **no duplicates**
   - High performance structure leveraging strong problem-solving practices
 
+---
 
+## 🖼️ Screenshot
+
+Here’s a screenshot of the **Cyber Attack Dashboard** in action:
+
+![Cyber Attack Dashboard Screenshot](images/dashboard-screenshot.png)
+
+---
 ---
 
 ## 🛠️ Installation & Run
@@ -71,3 +79,12 @@ npm run dev
 
 **Chowdam Tarun Kumar**
 
+<<<<<<< HEAD
+=======
+
+
+
+
+
+
+>>>>>>> ad2452abd8749b4f50773a87ed6b371563c16b3f
