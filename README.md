@@ -46,7 +46,7 @@ A modern cyber security analytics dashboard built using **React 19**, **TypeScri
 ![Login Page](screenshots/login.png)
 
 ### Threat Map
-![Threat Map](screenshots/MapView.png)
+![Threat Map](screenshots/Mapview.png)
 
 ### Attack Events Table
 ![Attack Events Table](screenshots/tableview.png)
