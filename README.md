@@ -8,9 +8,9 @@ A modern cyber security analytics dashboard built using **React 19**, **TypeScri
 ## 🚀 Features
 
 - **Login / Logout Authentication**
-  - Session state stored using `localStorage` (acts as local DB simulation)   
+  - Session state stored using `localStorage` (acts as local DB simulation)
 - **Sidebar Navigation**
-  - 2 main pages: **Threat Map** and **Attack Events**
+  - Two main pages: **Threat Map** and **Attack Events**
 - **Threat Map Page**
   - Interactive **SVG world map**
   - **Country hover tooltip** displaying real attack statistics:
@@ -18,46 +18,52 @@ A modern cyber security analytics dashboard built using **React 19**, **TypeScri
     Detected Attacks:
       Type of attack | count | affected system
     ```
-  - Data sourced from local CSV
+  - Data sourced from a local CSV file
 - **Attack Events Table Page**
   - **Pagination** (15 rows per page)
-  - **Rounded select dropdown filters** matching UI theme
-  - Filtering on:
+  - **Rounded select dropdown filters** matching the UI theme
+  - Filtering by:
     - Country
     - Attack Type
     - Affected System
     - Protocol
     - Protocol Type
 - **Refresh Button**
-  - Reloads the current page instantly
+  - Instantly reloads the current page
 - **Optimized Data Logic**
   - Efficient country and attack grouping using `useMemo`
-  - Clean merged codebase with **no duplicates**
-  - High performance structure leveraging strong problem-solving practices
+  - Clean, merged codebase with **no duplicates**
+  - High-performance structure using strong problem-solving practices
 
 ---
 
-## 🖼️ Screenshot
+## 🖼️ Screenshots
 
-Here’s a screenshot of the **Cyber Attack Dashboard** in action:
+### Register Page
+![Register Page](screenshots/register.png)
 
-![Cyber Attack Dashboard Register Page](screenshots/register.png)
+### Login Page
+![Login Page](screenshots/login.png)
 
-![Cyber Attack Dashboard Login Page](screenshots/login.png)
+### Threat Map
+![Threat Map](screenshots/mapview.png)
 
-![Cyber Attack Dashboard Threat Map](screenshots/Mapview.png)
-
-![Cyber Attack Dashboard Attack Events Table](screenshots/tableview.png)
+### Attack Events Table
+![Attack Events Table](screenshots/tableview.png)
 
 ---
 
 ## 🛠️ Installation & Run
 
-``bash
+Run the following commands in your **command line / terminal**:
+
+```bash
 cd cyber-attack-dashboard
 npm install
 npm run dev
+````
 
+---
 
 ## 🎯 Tech Stack
 
@@ -79,11 +85,8 @@ npm run dev
 
 ---
 
-### 👨‍💻 Author
+## 👨‍💻 Author
 
 **Chowdam Tarun Kumar**
-
-
-
 
 
