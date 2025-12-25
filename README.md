@@ -35,7 +35,15 @@ A modern cyber security analytics dashboard built using **React 19**, **TypeScri
   - Clean merged codebase with **no duplicates**
   - High performance structure leveraging strong problem-solving practices
 
+---
 
+## 🖼️ Screenshot
+
+Here’s a screenshot of the **Cyber Attack Dashboard** in action:
+
+![Cyber Attack Dashboard Screenshot](images/dashboard-screenshot.png)
+
+---
 ---
 
 ## 🛠️ Installation & Run
@@ -70,6 +78,7 @@ npm run dev
 ### 👨‍💻 Author
 
 **Chowdam Tarun Kumar**
+
 
 
 
