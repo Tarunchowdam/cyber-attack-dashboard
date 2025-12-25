@@ -41,11 +41,10 @@ A modern cyber security analytics dashboard built using **React 19**, **TypeScri
 
 Here’s a screenshot of the **Cyber Attack Dashboard** in action:
 
-[Cyber Attack Dashboard Register Page](C:\Users\mahes\Videos\cyber-attack-dashboard\screenshots\Screenshot 2025-12-25 082931.png)
-[Cyber Attack Dashboard Login Page](C:\Users\mahes\Videos\cyber-attack-dashboard\screenshots\Screenshot 2025-12-25 082921.png)
-[Cyber Attack Dashboard Threat Map](C:\Users\mahes\Videos\cyber-attack-dashboard\screenshots\Screenshot 2025-12-25 082958.png)
-[Cyber Attack Dashboard Attack Events Table](C:\Users\mahes\Videos\cyber-attack-dashboard\screenshots\Screenshot 2025-12-25 083014.png)
----
+![Cyber Attack Dashboard Register Page](C:\Users\mahes\Videos\cyber-attack-dashboard\screenshots\Screenshot 2025-12-25 082931.png)
+![Cyber Attack Dashboard Login Page](C:\Users\mahes\Videos\cyber-attack-dashboard\screenshots\Screenshot 2025-12-25 082921.png)
+![Cyber Attack Dashboard Threat Map](C:\Users\mahes\Videos\cyber-attack-dashboard\screenshots\Screenshot 2025-12-25 082958.png)
+![Cyber Attack Dashboard Attack Events Table](C:\Users\mahes\Videos\cyber-attack-dashboard\screenshots\Screenshot 2025-12-25 083014.png)
 ---
 
 ## 🛠️ Installation & Run
@@ -81,12 +80,4 @@ npm run dev
 
 **Chowdam Tarun Kumar**
 
-<<<<<<< HEAD
-=======
 
-
-
-
-
-
->>>>>>> ad2452abd8749b4f50773a87ed6b371563c16b3f
