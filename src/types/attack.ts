@@ -1,6 +1,6 @@
 
 export interface AttackEvent {
-  confidencesc: number;
+  // confidencesc: number;
   Country: string;
   AttackType: string;
   AffectedSystem: string;

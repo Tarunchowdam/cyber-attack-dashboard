@@ -25,9 +25,8 @@ export async function insertDefaultUser() {
 
   // Default user (only inserted if not exists)
   store.put({
-    email: "analyst@security.io",
-    password: "admin123",
-    role: "admin",
+    email: "myselftarun@gmail.com",
+    password: "myself123",
     createdAt: new Date().toISOString()
   });
 
@@ -56,7 +55,6 @@ export async function addUser(email: string, password: string, role = "user") {
   tx.objectStore(STORE_NAME).put({
     email,
     password,
-    role,
     createdAt: new Date().toISOString()
   });
   return tx.oncomplete;

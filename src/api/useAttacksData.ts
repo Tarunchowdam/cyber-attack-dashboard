@@ -11,8 +11,8 @@ export function useAttacksData() {
       download: true,
       header: true,
       skipEmptyLines: true,
-      complete: (res: any) => {
-        const rows = res.data as Record<string, any>[];
+      complete: (result: any) => {
+        const rows = result.data as Record<string, any>[];
         const mapped: AttackEvent[] = rows.map(r => ({
           Country: r['Destination Country'] || r['Source Country'] || r.Country || '',
           AttackType: r['Attack Type'] || r.AttackType || r['AttackType'] || '',
@@ -20,7 +20,7 @@ export function useAttacksData() {
           Protocol: r['Protocol'] || r.Protocol || '',
           SourceIP: r['Source IP'] || r.SourceIP || r['Source_IP'] || '',
           confidence: r['Confidence Score'] ? parseFloat(r['Confidence Score']) : (r.confidence ? parseFloat(r.confidence) : 0),
-          confidencesc: Number(r['Confidence'] || 0)
+          // confidencesc: Number(r['Confidence'] || 0)
         }));
         setData(mapped.filter(d => d.Country));
       },

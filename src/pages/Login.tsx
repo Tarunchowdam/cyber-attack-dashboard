@@ -49,7 +49,7 @@ export default function Login({ onLogin }: { onLogin: () => void }) {
         <label style={{ fontWeight: 700, fontSize: 13, color: '#9fbfd0' }}>Email</label>
         <div style={{ marginTop: 8 }}>
           <input
-            placeholder="analyst@security.io"
+            placeholder="user@gmail.com"
             value={user}
             onChange={e => setUser(e.target.value)}
           />

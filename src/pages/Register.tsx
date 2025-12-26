@@ -40,7 +40,7 @@ export default function Register() {
         <label style={{ fontWeight: 700, fontSize: 13, color: "#9fbfd0" }}>Email</label>
         <div style={{ marginTop: 8 }}>
           <input
-            placeholder="analyst@security.io"
+            placeholder="user@gmail.com"
             value={email}
             onChange={(e) => setEmail(e.target.value)}
           />
