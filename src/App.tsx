@@ -43,7 +43,7 @@ export default function App() {
           </div>
 
           <div className="header-actions">
-            <button className="refresh-btn" onClick={() => window.location.reload()}>⟳ Refresh</button>
+            <button className="refresh-btn" onClick={() => navigate(loc.pathname)}>⟳ Refresh</button>
             <div style={{ color: 'var(--muted)', fontSize: 13 }}>{currentUser}</div>
             <button className="refresh-btn" onClick={handleLogout}>➜]</button>
           </div>

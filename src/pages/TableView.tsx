@@ -2,11 +2,13 @@ import { useAttacksData } from '../api/useAttacksData';
 import { useMemo, useState } from 'react';
 
 export default function TableView() {
+  //pagination
   const data = useAttacksData();
   const [page, setPage] = useState(0);
   const [pageInput, setPageInput] = useState('');
   const pageSize = 15;
 
+  //fliters
   const countries = useMemo(() => Array.from(new Set(data.map(d => d.Country).filter(Boolean))), [data]);
   const types = useMemo(() => Array.from(new Set(data.map(d => d.AttackType).filter(Boolean))), [data]);
   const systems = useMemo(() => Array.from(new Set(data.map(d => d.AffectedSystem).filter(Boolean))), [data]);
@@ -32,6 +34,7 @@ export default function TableView() {
 
   const totalPages = Math.max(1, Math.ceil(filtered.length / pageSize));
 
+  //slice the page numbers
   const paged = filtered.slice(page * pageSize, (page + 1) * pageSize);
 
   const pagination = useMemo(() => {

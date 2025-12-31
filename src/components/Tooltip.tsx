@@ -1,8 +1,10 @@
 import React, { useEffect, useRef } from "react";
 
 export default function Tooltip({ x, y, content, setTooltip }: any) {
+  // Reference to the tooltip box to control scroll position
   const boxRef = useRef<HTMLDivElement>(null);
 
+  // Reset horizontal & vertical scroll when content changes
   useEffect(() => {
     if (boxRef.current) {
       boxRef.current.scrollTop = 0;
