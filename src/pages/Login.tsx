@@ -1,31 +1,40 @@
-import { useState, useEffect } from 'react';
-import { validateUser, insertDefaultUser } from '../db/indexedDB';
+import { useState } from 'react';
+import { authApi } from '../api/authApi';
 import { useNavigate } from 'react-router-dom';
 
 export default function Login({ onLogin }: { onLogin: () => void }) {
   const [user, setUser] = useState('');
   const [pass, setPass] = useState('');
   const [error, setError] = useState('');
+  const [loading, setLoading] = useState(false);
   const navigate = useNavigate();
-
-  useEffect(() => {
-    insertDefaultUser(); // ensures at least 1 user exists
-  }, []);
 
   async function submit(e: any) {
     e.preventDefault();
+    setError('');
+    setLoading(true);
+
     if (!user.trim() || !pass.trim()) {
-      setError("Please enter credentials");
+      setError('Please enter credentials');
+      setLoading(false);
       return;
     }
 
-    const ok = await validateUser(user, pass);
-    if (ok) {
-      localStorage.setItem('auth', '1');
-      localStorage.setItem('auth_user', user);
-      onLogin();
-    } else {
-      setError("Invalid email or password");
+    try {
+      const response = await authApi.login({ email: user, password: pass });
+
+      if (response.success) {
+        localStorage.setItem('auth', '1');
+        localStorage.setItem('auth_user', user);
+        onLogin();
+      } else {
+        setError(response.message || 'Invalid email or password');
+      }
+    } catch (err) {
+      setError('Login failed. Please try again.');
+      console.error('Login error:', err);
+    } finally {
+      setLoading(false);
     }
   }
 
@@ -38,7 +47,7 @@ export default function Login({ onLogin }: { onLogin: () => void }) {
                           fontSize: 72,
                           color: "#00f2ff",
                           textShadow: "0 0 30px #00f2ff, 0 0 60px #00f2ff, 0 0 100px #00f2ff"
-                          }}>🛡</div>
+                          }}>🛡️</div>
           </div>
 
         <h2>Threat Intelligence</h2>
@@ -52,6 +61,7 @@ export default function Login({ onLogin }: { onLogin: () => void }) {
             placeholder="user@gmail.com"
             value={user}
             onChange={e => setUser(e.target.value)}
+            disabled={loading}
           />
         </div>
 
@@ -64,10 +74,13 @@ export default function Login({ onLogin }: { onLogin: () => void }) {
             type="password"
             value={pass}
             onChange={e => setPass(e.target.value)}
+            disabled={loading}
           />
         </div>
 
-        <button className="login-btn" type="submit">Sign In</button>
+        <button className="login-btn" type="submit" disabled={loading}>
+          {loading ? 'Signing In...' : 'Sign In'}
+        </button>
 
         <p
           style={{ marginTop: 12, fontSize: 12, cursor: "pointer", color: "#9fbfd0", textAlign:"center" }}
